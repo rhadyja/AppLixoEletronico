@@ -5,8 +5,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/buttonZonaDaMata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ZONA DA MATA"
+        tools:layout_editor_absoluteX="131dp"
+        tools:layout_editor_absoluteY="151dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonAgreste"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="agreste"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="295dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonRMR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Região metropolitana"
+        tools:layout_editor_absoluteX="93dp"
+        tools:layout_editor_absoluteY="473dp"
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
