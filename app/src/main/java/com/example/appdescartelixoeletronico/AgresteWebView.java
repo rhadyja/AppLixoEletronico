@@ -8,27 +8,27 @@ import android.webkit.WebViewClient;
 
 public class AgresteWebView extends AppCompatActivity {
 
-    private String link;
+    private String url;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_agreste_web_view);
 
-        webView(getLink());
+        webView(getUrl());
     }
 
-    public String getLink() {
-        return link;
+    public String getUrl() {
+        return url;
     }
 
-    public void setLink(String link) {
-        this.link = link;
+    public void setLink(String url) {
+        this.url = url;
     }
 
-    public void webView(String link){
+    public void webView(String url){
         WebView webview = findViewById(R.id.webViewAgreste);
         webview.setWebViewClient(new WebViewClient());
         webview.getSettings().setJavaScriptEnabled(true);
-        webview.loadUrl(link);
+        webview.loadUrl(url);
     }
 }
