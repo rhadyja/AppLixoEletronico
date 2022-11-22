@@ -30,7 +30,7 @@ public class ZonaDaMata extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 if(position == 0){
-                    Intent intent1 = new Intent(ZonaDaMata.this, AgresteWebView.class);
+                    Intent intent1 = new Intent(ZonaDaMata.this, ZonaDaMataWebView.class);
                     startActivity(intent1);
                 }
                 else if(position == 1){
