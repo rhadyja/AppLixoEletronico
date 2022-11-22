@@ -32,8 +32,9 @@ public class Agreste extends AppCompatActivity {
                     AgresteWebView agresteWebView = new AgresteWebView();
                     if (position == 0) {
                         Intent intent1 = new Intent(Agreste.this, AgresteWebView.class);
+                        agresteWebView.setUrl("https://www.google.com/maps/dir//Descarte+Eletr%C3%B4nicos+Caruaru+-+R.+17+-+Kennedy,+Caruaru+-+PE,+55036-720/@-8.2897645,-35.9746215,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x7a98bea1f58cec7:0xfcc9947fbeb599e3!2m2!1d-35.9724328!2d-8.2897645!3e0https://www.google.com/maps/dir//Descarte+Eletr%C3%B4nicos+Caruaru+-+R.+17+-+Kennedy,+Caruaru+-+PE,+55036-720/@-8.2897645,-35.9746215,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x7a98bea1f58cec7:0xfcc9947fbeb599e3!2m2!1d-35.9724328!2d-8.2897645!3e0");
+                        agresteWebView.webView(agresteWebView.getUrl());
                         startActivity(intent1);
-                        agresteWebView.setLink("https://www.google.com/maps/dir//Descarte+Eletr%C3%B4nicos+Caruaru+-+R.+17+-+Kennedy,+Caruaru+-+PE,+55036-720/@-8.2897645,-35.9746215,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x7a98bea1f58cec7:0xfcc9947fbeb599e3!2m2!1d-35.9724328!2d-8.2897645!3e0https://www.google.com/maps/dir//Descarte+Eletr%C3%B4nicos+Caruaru+-+R.+17+-+Kennedy,+Caruaru+-+PE,+55036-720/@-8.2897645,-35.9746215,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x7a98bea1f58cec7:0xfcc9947fbeb599e3!2m2!1d-35.9724328!2d-8.2897645!3e0");
                     } else if (position == 1) {
                         Intent intent2 = new Intent(Agreste.this, AgresteWebView.class);
                         startActivity(intent2);

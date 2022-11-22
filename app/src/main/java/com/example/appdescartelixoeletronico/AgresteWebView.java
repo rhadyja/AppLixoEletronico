@@ -21,7 +21,7 @@ public class AgresteWebView extends AppCompatActivity {
         return url;
     }
 
-    public void setLink(String url) {
+    public void setUrl(String url) {
         this.url = url;
     }
 
