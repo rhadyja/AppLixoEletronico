@@ -14,21 +14,14 @@ public class AgresteWebView extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_agreste_web_view);
 
-        webView(getUrl());
-    }
-
-    public String getUrl() {
-        return url;
-    }
-
-    public void setUrl(String url) {
-        this.url = url;
-    }
-
-    public void webView(String url){
         WebView webview = findViewById(R.id.webViewAgreste);
         webview.setWebViewClient(new WebViewClient());
         webview.getSettings().setJavaScriptEnabled(true);
-        webview.loadUrl(url);
+        Bundle extras = getIntent().getExtras();
+        if(extras != null){
+            String url = extras.getString("link");
+            webview.loadUrl(url);
+        }
+
     }
 }
