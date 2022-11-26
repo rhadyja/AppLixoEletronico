@@ -17,10 +17,10 @@ public class AgresteWebView extends AppCompatActivity {
         WebView webview = findViewById(R.id.webViewAgreste);
         webview.setWebViewClient(new WebViewClient());
         webview.getSettings().setJavaScriptEnabled(true);
-        Bundle extras = getIntent().getExtras();
+        Bundle extras = getIntent().getExtras();//recebendo o link que vem da activity Agreste
         if(extras != null){
-            String url = extras.getString("link");
-            webview.loadUrl(url);
+            String url = extras.getString("link"); //enetendendo a string que veio da activity Agreste
+            webview.loadUrl(url); //abrindo o webview com o link vindo da activity Agreste
         }
 
     }
